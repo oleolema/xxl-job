@@ -78,11 +78,8 @@ public class GsonTool {
      * @return
      */
     public static <T> List<T> fromJsonList(String json, Class<T> classOfT) {
-        return gson.fromJson(
-                json,
-                new TypeToken<List<T>>() {
-                }.getType()
-        );
+        Type type = new ParameterizedType4ReturnT(List.class, new Class[]{classOfT});
+        return gson.fromJson(json, type);
     }
 
 }
