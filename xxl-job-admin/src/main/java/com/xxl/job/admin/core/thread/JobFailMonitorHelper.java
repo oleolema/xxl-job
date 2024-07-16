@@ -37,7 +37,7 @@ public class JobFailMonitorHelper {
 				// monitor
 				while (!toStop) {
 					try {
-
+						// 失败重试 todo
 						List<Long> failLogIds = XxlJobAdminConfig.getAdminConfig().getXxlJobLogDao().findFailJobLogIds(1000);
 						if (failLogIds!=null && !failLogIds.isEmpty()) {
 							for (long failLogId: failLogIds) {

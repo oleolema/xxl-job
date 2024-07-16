@@ -103,7 +103,7 @@ public class JobThread extends Thread{
     		logger.error(e.getMessage(), e);
 		}
 
-		// execute
+		// execute todo
 		while(!toStop){
 			running = false;
 			idleTimes++;

@@ -79,7 +79,7 @@ public class JobTriggerPoolHelper {
         // choose thread pool
         ThreadPoolExecutor triggerPool_ = fastTriggerPool;
         AtomicInteger jobTimeoutCount = jobTimeoutCountMap.get(jobId);
-        if (jobTimeoutCount!=null && jobTimeoutCount.get() > 10) {      // job-timeout 10 times in 1 min
+        if (jobTimeoutCount!=null && jobTimeoutCount.get() > 10) {      // job-timeout 10 times in 1 min，超过500ms就算超时
             triggerPool_ = slowTriggerPool;
         }
 

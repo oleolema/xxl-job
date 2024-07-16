@@ -3,7 +3,7 @@ package com.xxl.job.core.biz;
 import com.xxl.job.core.biz.model.*;
 
 /**
- * Created by xuxueli on 17/3/1.
+ * Created by xuxueli on 17/3/1.执行器提供给admin的接口
  */
 public interface ExecutorBiz {
 

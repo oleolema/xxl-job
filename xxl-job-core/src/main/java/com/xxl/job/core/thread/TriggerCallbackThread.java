@@ -66,7 +66,7 @@ public class TriggerCallbackThread {
                         HandleCallbackParam callback = getInstance().callBackQueue.take();
                         if (callback != null) {
 
-                            // callback list param
+                            // callback list param， 取出所有回调任务
                             List<HandleCallbackParam> callbackParamList = new ArrayList<HandleCallbackParam>();
                             int drainToNum = getInstance().callBackQueue.drainTo(callbackParamList);
                             callbackParamList.add(callback);

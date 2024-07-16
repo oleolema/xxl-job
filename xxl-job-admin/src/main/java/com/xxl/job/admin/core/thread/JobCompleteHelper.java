@@ -62,7 +62,7 @@ public class JobCompleteHelper {
 			@Override
 			public void run() {
 
-				// wait for JobTriggerPoolHelper-init
+				// wait for JobTriggerPoolHelper-init todo
 				try {
 					TimeUnit.MILLISECONDS.sleep(50);
 				} catch (InterruptedException e) {

@@ -11,7 +11,7 @@ import com.xxl.job.core.biz.model.TriggerParam;
 import java.util.List;
 
 /**
- * Created by xuxueli on 17/3/10.
+ * Created by xuxueli on 17/3/10. 选择一个空闲的执行器，如果全都不空闲，就返回失败
  */
 public class ExecutorRouteBusyover extends ExecutorRouter {
 

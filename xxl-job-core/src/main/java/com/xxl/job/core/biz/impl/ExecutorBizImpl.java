@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Date;
 
 /**
- * Created by xuxueli on 17/3/1.
+ * Created by xuxueli on 17/3/1. 执行器提供给admin的接口
  */
 public class ExecutorBizImpl implements ExecutorBiz {
     private static Logger logger = LoggerFactory.getLogger(ExecutorBizImpl.class);

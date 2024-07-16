@@ -39,7 +39,7 @@ public class ExecutorRegistryThread {
             @Override
             public void run() {
 
-                // registry
+                // registry 每隔30s注册一次
                 while (!toStop) {
                     try {
                         RegistryParam registryParam = new RegistryParam(RegistryConfig.RegistType.EXECUTOR.name(), appname, address);
