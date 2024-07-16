@@ -10,7 +10,7 @@ import com.xxl.job.core.biz.model.TriggerParam;
 import java.util.List;
 
 /**
- * Created by xuxueli on 17/3/10.
+ * Created by xuxueli on 17/3/10. 选择一个存活的机器，如果第一个一直存活，始终会选择第一个
  */
 public class ExecutorRouteFailover extends ExecutorRouter {
 

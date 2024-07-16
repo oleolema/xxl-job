@@ -11,7 +11,7 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Created by xuxueli on 17/3/10.
+ * Created by xuxueli on 17/3/10. 轮训，给每个JobId维护一个计数器n，每次n++, 取 n % (length - 1)
  */
 public class ExecutorRouteRound extends ExecutorRouter {
 

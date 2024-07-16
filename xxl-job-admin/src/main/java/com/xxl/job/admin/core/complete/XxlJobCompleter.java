@@ -41,12 +41,13 @@ public class XxlJobCompleter {
 
 
     /**
-     * do somethind to finish job
+     * do somethind to finish job， 结束任务
      */
     private static void finishJob(XxlJobLog xxlJobLog){
 
         // 1、handle success, to trigger child job
         String triggerChildMsg = null;
+        // 如果任务正常结束， 执行这个任务的子任务
         if (XxlJobContext.HANDLE_CODE_SUCCESS == xxlJobLog.getHandleCode()) {
             XxlJobInfo xxlJobInfo = XxlJobAdminConfig.getAdminConfig().getXxlJobInfoDao().loadById(xxlJobLog.getJobId());
             if (xxlJobInfo!=null && xxlJobInfo.getChildJobId()!=null && xxlJobInfo.getChildJobId().trim().length()>0) {

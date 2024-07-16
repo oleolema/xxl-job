@@ -8,13 +8,13 @@ import com.xxl.job.core.biz.model.*;
 public interface ExecutorBiz {
 
     /**
-     * beat
+     * beat 执行器是否存活
      * @return
      */
     public ReturnT<String> beat();
 
     /**
-     * idle beat
+     * idle beat, 执行器是否空闲（没有任务）
      *
      * @param idleBeatParam
      * @return

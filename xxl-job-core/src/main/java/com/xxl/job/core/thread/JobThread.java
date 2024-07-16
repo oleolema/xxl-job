@@ -184,6 +184,7 @@ public class JobThread extends Thread{
 					);
 
 				} else {
+					// 如果JobThread空闲了 3s * 30 后，会移除这个线程
 					if (idleTimes > 30) {
 						if(triggerQueue.size() == 0) {	// avoid concurrent trigger causes jobId-lost
 							XxlJobExecutor.removeJobThread(jobId, "excutor idel times over limit.");
